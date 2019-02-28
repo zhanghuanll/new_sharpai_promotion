@@ -1,11 +1,190 @@
-#index-parent{
+#index-perent{
     width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     background-color: #f1f1f1;
 }
-.banner-1{
+*{
+	margin: 0;
+	padding: 0;
+}
+.slide{
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	z-index: 999;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.slide ul{
+	width: 10000%;
+	list-style-type: none;
+}
+.next_btn{
+	position: absolute;
+	width: 25px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	opacity: .5;
+	vertical-align: middle;
+	right: 5px;
+	top: 50%;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+    font-family: "宋体";
+    display: none;
+}
+.prev_btn{
+	position: absolute;
+	width: 25px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	opacity: .9;
+	vertical-align: middle;
+	left: 5px;
+	top: 50%;
+	font-family: "宋体";
+	font-size: 20px;
+	font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+.slide ul:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.slide ul li{
+	float: left;
+	text-align: center;
+}
+.slide ul li img{
+	vertical-align: middle;
+	max-width: 100%;
+}
+.slide .circle_btn{
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+	left: 0;
+	display: table;
+	margin: 0 auto;
+	width: 100%;
+}
+.slide .circle_btn button{
+	box-sizing: content-box;
+	opacity: .8;
+	outline: none;
+	border: none;
+	padding: 2px 18px;
+	background: rgba(255,255,255,.2);
+	margin: 2px 5px;
+	overflow: hidden;
+	transition: all .6s;
+	cursor: pointer;
+}
+.slide .circle_btn button.active{
+	background: rgba(167,167,167,.8);
+}
+
+/*走马灯的css  */
+#marquee{
     width: 100%;
-    height: 15rem;
-    background-image: url("/img/002.png");
+    height: 2.5rem;
+    background-color: white;
+}
+.trumpet-left{
+    display: inline-block;
+    height: 2.5rem;
+    width: 8%;
+    background: url(../img/noticeIco1.gif) no-repeat 5.5rem 0.57rem;
+}
+.marquee-right{
+    display: inline-block;
+    width: 85%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #666666;
+}
+
+/* 汪汪安全盒的版本 */
+#version-fa{
+    width: 100%;
+}
+.version-top,.version-bootom{
+    width: 100%;
+}
+.version-top .version-top-info{
+    width: 80%;
+    height: 70%;
+    margin-top: 5rem;
+    padding-left: 2.5rem;
+}
+.version-top-info .top-info-01{
+    font-size: 160%;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+.version-top-info .top-info-02{
+    font-size: 100%;
+    color: #4b4b55;
+}
+.version-bootom .version-introduce{
+    width: 100%;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+.version-bootom .version-introduce .introduce-fa{
+    height: 16.68rem;
+}
+.caption{
+    width: 100%;
+}
+.caption .caption-one{
+    font-size: 125%;
+    margin-top: 1rem;
+}
+.caption .caption-one,.caption-tow,.caption-theer{
+    width: 100%;
+}
+.caption .caption-tow,.caption-theer{
+ color: #6c6c6c;
+ font-size: 88%;
+}
+@media screen and (max-width:1024px){
+    .thumbnail img{
+        width: 100%;
+    }
+    .caption .caption-one{
+        font-size: 120%
+    }
+    .caption .caption-one{
+        font-size: 88%;
+        margin-top: 1rem;
+    }
+    .caption .caption-tow,.caption-theer{
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .version-top-info .top-info-01{
+        font-size: 120%;
+    }
+    .version-top-info .top-info-02{
+        font-size: 80%;
+    }
+}
+
+
+/* 视频播放器 */
+#video-main{
+    background-image: url("../img/img01.jpg");
     background-position: center 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,4 +193,87 @@
     -o-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
+    height:  47.55rem;
+}
+.video-info{
+    width: 100%;
+    height: 20%;
+    color: #fff;
+}
+.video-info .video-info-fa{
+    position:relative;
+    left:2.5rem;
+    top:4.5rem;
+}
+
+.video-play{
+    width: 100%;
+    height: 80%;
+    padding: 3rem 0 3rem 0;
+    color: #fff;
+}
+.m {
+    width: 100%;
+    height: 100%;
+}
+#my-video{
+    width: 80%;
+}
+.video-name{
+    width: 80%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 25px 0 0 25px;
+    float: right;
+    margin-top: 1rem;
+}
+.video-name:hover{
+    background-color: #fff;
+    color: #1e50ae;
+    font-weight: bold;
+    cursor: pointer;
+}
+.show-info{
+    width: 95%;
+    height: 75%;
+    background-color: #fff;
+    color: #666666;
+    display: none;
+}
+.show-info .show-info-one{
+    padding:1.5rem 0 0 1.5rem; 
+}
+.show-info .show-info-tow{
+    padding:1.5rem 1.5rem 0 0.5rem; 
+}
+@media screen and (max-width:1000px){
+    #my-video{
+        width: 100%;
+    }
+}
+@media screen and (min-width:900px){
+    .video-info .video-info-fa .video-info-one{
+        font-size: 150%;
+        font-weight: bold;
+    }
+    .video-info .video-info-fa .video-info-tow{
+        font-size: 118%;
+    }
+}
+@media screen and (max-width:865px){
+    .video-info .video-info-fa .video-info-one{
+        font-size: 150%;
+        font-weight: bold;
+    }
+    .video-info .video-info-fa .video-info-tow{
+        font-size: 118%;
+    }
+}
+@media screen and (max-width:570px){
+    .video-info-fa .video-info-one{
+        font-size: 100%;
+    }
+    .video-info-fa .video-info-tow{
+        font-size: 80%;
+    }
 }
