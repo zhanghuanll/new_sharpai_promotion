@@ -1,0 +1,127 @@
+/* .container, .container-fluid {
+    background-color: oldlace;
+} */
+
+.top-nav .nav {
+    width: 480px;
+    height: 50px;
+    background-color: white;
+}
+
+.top-nav .nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav .nav li:hover {
+    color: white;
+    background-color: rgba(31, 135, 232, 1);
+}
+
+.top-nav .nav a:hover {
+    color: white;
+}
+
+.banner {
+    /* max-height: 420px; */
+    height: 420px;
+    color: white;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../img/002.png');
+}
+
+.banner h1 {
+    font-size: 52px;
+}
+
+.banner p {
+    font-size: 24px;
+}
+
+.profile .row {
+    /* height: 428px; */
+    /* max-height: 428px; */
+    padding: 90px 0;
+}
+.profile h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: rgb(43, 43, 43);
+}
+
+.profile span {
+    font-size: 14px;
+    color: rgb(222, 222, 222);
+}
+
+.profile p {
+    max-width: 570px;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 30px;
+}
+
+.profile h6 {
+    font-size: 14px;
+    color: rgb(222, 222, 222);
+}
+
+.profile img {
+    /* width: 459px; */
+    /* height: 251px; */
+}
+
+.photo-wall span {
+    color: rgb(222, 222, 222);
+    font-size: 20px;
+}
+
+.photo-wall h6 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.photo-wall h4 {
+    max-width: 192px;
+}
+
+footer {
+    /* width: 100vw; */
+    /* height: 271px; */
+    /* color: white; */
+    margin-top: 100px;
+    background-color: #2b2b2b;
+}
+
+footer .row {
+    position: relative;
+}
+
+footer h6 {
+    /* position: relative; */
+    font-size: 14px;
+    padding: 90px;
+    margin-bottom: 0;
+    color: rgb(222, 222, 222);
+}
+
+footer .row::after {
+    position: absolute;    
+    bottom:0;
+    left: 0;
+    content: '';    
+    width: 100%;    
+    border-bottom: solid  rgb(53, 53, 53) 1px;
+}
+
+footer span {
+    font-size: 14px;
+    padding: 20px 0;
+    color: rgb(169, 169, 169);
+}
