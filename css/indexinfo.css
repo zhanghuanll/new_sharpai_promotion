@@ -587,9 +587,6 @@
         font-size: 108%;
         margin-top: 50px;
     }
-    .consult-one .consult-theer{
-      
-    }
     .consult-one .consult-theer a{
         width: 71.4%;
         height: 4%;
@@ -607,6 +604,7 @@
 }
 .scope-img{
     width: 100%;
+    padding-top: 5%;
 }
 .scope-img img{
     width: 94%;
@@ -616,7 +614,7 @@
 .scope-bigs{
     width: 100%;
     height: 340px;
-    padding: 2% 5%;
+    padding: 0% 5%;
 }
 .scope-bigs .cope-bigs-one{
     width: 100%;
@@ -641,18 +639,43 @@
 }
 .cope-bigs-tow .massage-zero{
     width: 100%;
-    height: 100px;
+    height: 80px;
     margin-top: 15px;
 }
 .massage-zero .massage-name{
     width: 100%;
     height: 23px;
+    float: left;
 }
 .massage-name .span-left,.span-right{
     display: inline-block;
+}
+.massage-name .span-left{
+    float: left;
+}
+.massage-name .span-right{
+    float: right;
 }
 .massage-zero .massage-info{
     width: 100%;
     height: 52px;
     margin: 5px 0 0 5px;
+    color: #666666;
+    font-size: 86%;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 15px;
+    padding-top: 29px;
 }
+
+@media screen and (max-width:500px){
+    .cope-bigs-one .cope-z1 .lable-n1{
+        width: 25%;
+    }
+}
+.video-js .vjs-big-play-button{
+    position: relative;
+    top: 44%;
+    left: 42%;
+}
+
