@@ -7,7 +7,11 @@ $(function(){
             showIndex(this);
         })
     })
-
+    
+    $(".location-btn1").click(function(){
+        window.location = "https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-12617595122.2.33ff4679Hed5KU&id=577748526182"
+    })
+    
     function showIndex(my_this){
         var index = $(my_this).index()
         if(index && index == 1){
@@ -261,9 +265,6 @@ videojs.addLanguage('zh-CN', {
       var myPlayer = this;
       myPlayer.play();
   });
-
-
-
 
 
 

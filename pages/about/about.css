@@ -22,6 +22,13 @@
 .top-nav .nav a:hover {
     color: white;
 }
+@media screen and (max-width:402px) {
+    .nav-link {
+        display: block;
+        padding: 1rem 0.5rem;
+        font-size: 14px;
+    }
+}
 
 .banner {
     /* max-height: 420px; */
