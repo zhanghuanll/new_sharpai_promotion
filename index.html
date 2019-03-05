@@ -14,9 +14,11 @@
 
     <link rel="stylesheet" href="pages/about/about.css">
     <link rel="stylesheet" href="css/video-js.min.css">
-    <link rel="stylesheet" href="css/indexinfo.css">
-    <script src="js/indexinfo.js"></script>
-    <script src="js/video.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/video-js.min.css">
+    <script src="js/index.js"></script>
+    <script src="js/video.js"></script>
+    <script type="text/javascript" src="js/clappr.min.js"></script>
 
     <body>
         <section class="top-nav container fixed-top d-flex justify-content-end">
@@ -235,7 +237,48 @@
             </div>
 
             <!-- 视频播放器 -->
-            <div id="video-main" class="row">
+            <div id="video-main">
+                <div class="container">
+                    <div class="video-top">
+                        <h3 class="video-info1">人脸识别不够？我们还有人形识别+物体识别</h3>
+                        <div class="video-info2">更全面的人工智能，每一个方向，我们都有完整的解决方案</div>
+                    </div>
+                    <div class="d-flex row mb-3 video-bottom">
+                        <div class="p-2 col-md-4">
+                            <section class="info-list">
+                                <div class="video-name">人脸识别-视频介绍</div>
+                                <div class="video-name">人脸识别</div>
+                                <div class="video-name">人形识别</div>
+                                <div class="video-name">物体识别</div>
+                            </section>
+                        </div>
+                        <div class="p-2 flex-fill video-show col-md-8">
+                            <!-- <video id="example_video_1" data-setup='{ "techOrder": ["flash","html5"] }' 
+                            autoplay="autoplay" loop="loop" class="video-js vjs-default-skin vjs-fluid"  
+                            width="700" height="400" controls="controls">
+                                <source src="mp4/xiaoquban.mp4" type="video/mp4">
+                            </video>    -->
+                            <div class="bg-info" style="widows: 95%;;height:400px;">
+                                <div id="player"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="p-3 flex-fill bg-white info-show col-md-8">
+                            <div class="container-fluid">
+                                <div class="d-flex row mb-3">
+                                    <div class="p-2 show-info-one col-md-4">
+                                        <img src="" width="100%" class="img-responsive center-block">
+                                    </div>
+                                    <div class="p-2 flex-fill show-info-tow col-md-8" style="color:#666666;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <!-- <div id="video-main" class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="video-info">
                         <div class="video-info-fa">
@@ -281,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
             <!-- 公司业务介绍 -->

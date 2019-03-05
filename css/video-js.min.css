@@ -541,16 +541,16 @@ body.vjs-full-window {
     width: 3em;
     display: block;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 44%;
+    left: 44%;
     padding: 0;
     cursor: pointer;
     opacity: 1;
     border: .06666em solid #fff;
-    background-color: #2b333f;
     background-color: rgba(43, 51, 63, .7);
     border-radius: .3em;
-    transition: all .4s
+    transition: all .4s;
+   
 }
 
 .vjs-big-play-centered .vjs-big-play-button {
@@ -816,7 +816,8 @@ body.vjs-full-window {
     padding: 0;
     height: 100%;
     width: 4em;
-    flex: none
+    flex: none;
+    /* background: url(../img/btn1.png) -2327px -633px no-repeat; */
 }
 
 .vjs-button>.vjs-icon-placeholder:before {
