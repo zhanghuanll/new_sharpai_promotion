@@ -1,0 +1,121 @@
+
+body {
+    background-color: rgb(144, 202, 248)
+}
+
+/*
+*   右上导航
+*/
+
+.top-nav .nav {
+    width: 480px;
+    height: 50px;
+    background-color: white;
+}
+
+.top-nav .nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav .nav li:hover {
+    color: white;
+    background-color: rgba(31, 135, 232, 1);
+}
+
+.top-nav .nav a:hover {
+    color: white;
+}
+
+/*
+*   内容模块
+*/
+
+.help-content {
+    margin-top: 150px;
+    height: 797px;
+}
+
+.help-content .row {
+    height: 100%;
+}
+
+.item1, .item2 {
+    padding: 0
+}
+
+
+/* .help-content .nav {
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+} */
+
+[role=tablist] {
+    height: calc( 100% - 20px);
+    background-color: rgb(245, 245, 245)
+}
+
+[role=tablist] a {
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px !important;
+    border: 0px;
+    margin-bottom: 2px;
+}
+
+/* [role=tablist] a:hover {
+    height: 100px;
+} */
+
+[role=tablist] a:focus {
+    height: 100px;
+}
+
+.help-content .tab-content {
+    /* width: calc( 100% - 20px); */
+    height: calc( 100% - 20px);
+    padding: 20px;
+    background-color: white;
+}
+
+/*
+* footer
+*/
+
+footer {
+    /* width: 100vw; */
+    /* height: 271px; */
+    /* color: white; */
+    margin-top: 100px;
+    background-color: #2b2b2b;
+}
+
+footer .row {
+    position: relative;
+}
+
+footer h6 {
+    /* position: relative; */
+    font-size: 14px;
+    padding: 90px;
+    margin-bottom: 0;
+    color: rgb(222, 222, 222);
+}
+
+footer .row::after {
+    position: absolute;    
+    bottom:0;
+    left: 0;
+    content: '';    
+    width: 100%;    
+    border-bottom: solid  rgb(53, 53, 53) 1px;
+}
+
+footer span {
+    font-size: 14px;
+    padding: 20px 0;
+    color: rgb(169, 169, 169);
+}
